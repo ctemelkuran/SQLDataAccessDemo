@@ -29,13 +29,23 @@ namespace FormUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.listbxPeopleFound = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
+            // 
+            // listbxPeopleFound
+            // 
+            this.listbxPeopleFound.FormattingEnabled = true;
+            this.listbxPeopleFound.Location = new System.Drawing.Point(12, 85);
+            this.listbxPeopleFound.Name = "listbxPeopleFound";
+            this.listbxPeopleFound.Size = new System.Drawing.Size(204, 160);
+            this.listbxPeopleFound.TabIndex = 0;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listbxPeopleFound);
             this.Name = "Dashboard";
             this.Text = "SQL Data Access Demo";
             this.ResumeLayout(false);
@@ -43,6 +53,8 @@ namespace FormUI
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox listbxPeopleFound;
     }
 }
 
