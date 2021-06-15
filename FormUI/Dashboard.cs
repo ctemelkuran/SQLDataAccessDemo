@@ -16,6 +16,9 @@ namespace FormUI
         public Dashboard()
         {
             InitializeComponent();
+
+            listbxPeopleFound.DataSource = people;
+            listbxPeopleFound.DisplayMember = "FullInfo";
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

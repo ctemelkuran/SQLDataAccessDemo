@@ -11,7 +11,10 @@ namespace FormUI
         public List<Person> GetPeople(string lastName)
         {
             // NotImplementedException allow us to compile the app while working on it
+            // It doesnt have to return anything for now
             throw new NotImplementedException();
+
+
         }
     }
 }
