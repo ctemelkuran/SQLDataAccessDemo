@@ -15,7 +15,7 @@ namespace FormUI
         List<Person> people = new List<Person>();
         public Dashboard()
         {
-            
+
             InitializeComponent();
             UpdateBinding();
         }
@@ -32,6 +32,16 @@ namespace FormUI
             DataAccess db = new DataAccess();
             people = db.GetPeople(txtbxLastName.Text);
             UpdateBinding();
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            DataAccess db = new DataAccess();
+            db.InsertPerson(txtbxFirstNameIns.Text, txtbxLastNameIns.Text, txtbxEmailIns.Text, txtbxPhoneNumberIns.Text);
+            txtbxFirstNameIns.Text = "";
+            txtbxLastNameIns.Text = "";
+            txtbxEmailIns.Text = "";
+            txtbxPhoneNumberIns.Text = "";
         }
     }
 }
