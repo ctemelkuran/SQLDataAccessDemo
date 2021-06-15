@@ -16,7 +16,11 @@ namespace FormUI
         public Dashboard()
         {
             InitializeComponent();
+            UpdateBinding();
+        }
 
+        private void UpdateBinding()
+        {
             listbxPeopleFound.DataSource = people;
             listbxPeopleFound.DisplayMember = "FullInfo";
         }
@@ -26,6 +30,7 @@ namespace FormUI
             //we gonna call the database
             DataAccess db = new DataAccess();
             people = db.GetPeople(txtbxLastName.Text);
+            UpdateBinding();
         }
     }
 }
