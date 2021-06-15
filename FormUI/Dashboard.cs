@@ -15,6 +15,7 @@ namespace FormUI
         List<Person> people = new List<Person>();
         public Dashboard()
         {
+            
             InitializeComponent();
             UpdateBinding();
         }

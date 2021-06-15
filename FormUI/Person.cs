@@ -8,6 +8,8 @@ namespace FormUI
 {
     public class Person
     {
+        // make the column names and property names the SAME
+        // pretend it is SQL
         public int id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
